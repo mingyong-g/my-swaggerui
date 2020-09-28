@@ -2,7 +2,7 @@
  * @Author       : mingyong.g
  * @Date         : 2020-09-24 18:52:48
  * @LastEditors  : mingyong.g
- * @LastEditTime : 2020-09-28 14:48:12
+ * @LastEditTime : 2020-09-28 15:09:32
  * @Description  : 
  * @FilePath     : \my-swaggerui\README.md
 -->
@@ -24,7 +24,9 @@
 
 🚀gitee: [https://gitee.com/mingyong-g/my-swaggerui](https://gitee.com/mingyong-g/my-swaggerui)
 
-🚀demo: [https://gitee.com/mingyong-g/my-swaggerui](https://gitee.com/mingyong-g/my-swaggerui)
+🚀demo-github: [https://mingyong-g.github.io/my-swaggerui/](https://mingyong-g.github.io/my-swaggerui/)
+
+🚀demo-gitee: [https://mingyong-g.gitee.io/my-swaggerui/](https://mingyong-g.gitee.io/my-swaggerui/)
 
 ### 关于swagger JSON文件解析核心功能由think-swagger-ui-vuele实现，下面是think-swagger-ui-vuele自述文档
 
