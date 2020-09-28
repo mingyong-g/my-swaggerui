@@ -2,9 +2,9 @@
  * @Author       : mingyong.g
  * @Date         : 2020-09-24 18:52:48
  * @LastEditors  : mingyong.g
- * @LastEditTime : 2020-09-28 14:35:38
+ * @LastEditTime : 2020-09-28 14:48:12
  * @Description  : 
- * @FilePath     : \think-swagger-ui-vuele-master\README.md
+ * @FilePath     : \my-swaggerui\README.md
 -->
 # MY_SwaggerUI
 
@@ -20,7 +20,11 @@
 - 修复了`post`请求，`query`参数和`body`共存时，参数处理出错的bug
 
 ## 项目地址
+🚀github: [https://github.com/mingyong-g/my-swaggerui](https://github.com/mingyong-g/my-swaggerui)
 
+🚀gitee: [https://gitee.com/mingyong-g/my-swaggerui](https://gitee.com/mingyong-g/my-swaggerui)
+
+🚀demo: [https://gitee.com/mingyong-g/my-swaggerui](https://gitee.com/mingyong-g/my-swaggerui)
 
 ### 关于swagger JSON文件解析核心功能由think-swagger-ui-vuele实现，下面是think-swagger-ui-vuele自述文档
 
