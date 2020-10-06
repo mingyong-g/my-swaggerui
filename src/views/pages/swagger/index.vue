@@ -121,6 +121,13 @@
                 @click="selMdShow" 
                 size="small"
               >关闭md</tc-button>
+              <tc-button 
+                type="success" 
+                size="small" 
+                v-clipboard:copy="apiexport()"
+                v-clipboard:success="onCopySuccess" 
+                v-clipboard:error="onCopyError"
+              >api复制</tc-button>
             </el-col>
           </el-row>
         </tc-form>
@@ -192,7 +199,7 @@
       <md-show :mdContent="mdShowForm.content" />
     </tc-dialog> -->
     <md-show class="fixed-md-show" v-show="mdShowForm.show" :mdContent="mdShowForm.content" />
-     <tc-dialog 
+    <tc-dialog 
       loading title="查看请求" 
       :visible.sync="reqJsonView.show" 
       width="800px" 
@@ -212,6 +219,7 @@ import mock from 'mockjs'
 import swaggerService from '@/api/swagger'
 import swaggerHelper from './assist/swagger.helper'
 import buildmd from './assist/buildmd'
+import apiexport from '@/views/pages/swagger/assist/apiexport'
 import jsonViewer from 'vue-json-viewer'
 
 const path = require('path')
@@ -224,7 +232,7 @@ files.keys().forEach(key => {
 modules.jsonViewer = jsonViewer
 
 export default {
-  mixins: [swaggerHelper, buildmd],
+  mixins: [swaggerHelper, buildmd,apiexport],
 
   // components: { jsonViewer, jsonedit, mdShow, reqJsonView,paramsTable },
   components:modules,
@@ -313,6 +321,9 @@ export default {
       // this.mdShowForm.show = true
       this.mdShowForm.show = !this.mdShowForm.show
       this.mdShowForm.content = this.buildMd()
+      const api = this.apiexport()
+      console.log('api: ');
+      console.log(api);
     },
     resetResponseTime() {
       this.responseTimeInfo.requestTime = null
